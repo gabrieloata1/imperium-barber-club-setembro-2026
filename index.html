@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperium Barber Club | Barbearia Premium & Experiência Clássica no Rio</title>
+    <meta name="description" content="A melhor barbearia premium do Rio de Janeiro. Cortes modernos e clássicos, barboterapia com toalha quente, chopp artesanal e clube de assinatura exclusivo.">
+    <meta property="og:title" content="Imperium Barber Club | Barbearia Clássica & Clube VIP">
+    <meta property="og:description" content="Barbearia de alto padrão em Ipanema. Corte degradê, barba terapia e clube de assinatura. Agende pelo WhatsApp sem fila.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1200&auto=format&fit=crop&q=80">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Imperium Barber Club | Barbearia Clássica & Clube VIP">
+    <meta name="twitter:description" content="Barbearia de alto padrão em Ipanema. Corte degradê, barba terapia e clube de assinatura. Agende pelo WhatsApp sem fila.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1200&auto=format&fit=crop&q=80">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        amberGold: '#d4af37',
+                        darkNavy: '#0b0f17',
+                        darkCard: '#111827',
+                        darkBorder: '#1f2937'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #f7d070 0%, #d4af37 50%, #996515 100%);
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #fef08a 0%, #d4af37 50%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pulse-whatsapp {
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            animation: pulse-wa 1.8s infinite cubic-bezier(0.66, 0, 0, 1);
+        }
+        @keyframes pulse-wa {
+            to {
+                box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#0b0f17] text-slate-200 font-sans antialiased selection:bg-amber-500 selection:text-black">
+
+    <!-- Top VIP Banner -->
+    <div class="bg-gradient-to-r from-amber-900/60 via-amber-800/40 to-amber-900/60 border-b border-amber-500/20 text-xs py-2 px-4 text-amber-200 text-center font-medium">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-beer-mug-empty text-amber-400"></i>
+                Chopp artesanal & café espresso de boas-vindas liberados em todos os atendimentos.
+            </span>
+            <a href="https://wa.me/5521983228129?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Imperium%20Barber%20Club." target="_blank" class="hover:text-white flex items-center gap-1 font-bold underline">
+                <i class="fa-brands fa-whatsapp text-sm text-emerald-400"></i> WhatsApp Oficial: (21) 98322-8129
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-[#0b0f17]/95 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center text-black font-black text-xl shadow-lg shadow-amber-500/10 group-hover:scale-105 transition">
+                    <i class="fa-solid fa-scissors"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-widest uppercase font-serif gold-text-gradient block leading-tight">IMPERIUM</span>
+                    <span class="text-[9px] font-bold tracking-[0.3em] uppercase text-slate-400 block -mt-1">Barber Club • Ipanema</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold tracking-wide text-slate-300">
+                <a href="#experiencia" class="hover:text-amber-400 transition">A Experiência</a>
+                <a href="#servicos" class="hover:text-amber-400 transition">Serviços & Preços</a>
+                <a href="#assinatura" class="hover:text-amber-400 transition">Clube VIP</a>
+                <a href="#galeria" class="hover:text-amber-400 transition">Galeria</a>
+                <a href="#depoimentos" class="hover:text-amber-400 transition">Avaliações</a>
+                <a href="#duvidas" class="hover:text-amber-400 transition">FAQ</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Imperium%20Barber%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white px-5 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-emerald-900/30 transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Agendar Horário</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" aria-label="Menu" class="lg:hidden p-2 text-slate-300 hover:text-white">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-nav" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#experiencia" class="block text-slate-300 font-medium py-1">A Experiência</a>
+            <a href="#servicos" class="block text-slate-300 font-medium py-1">Serviços & Preços</a>
+            <a href="#assinatura" class="block text-slate-300 font-medium py-1">Clube VIP</a>
+            <a href="#galeria" class="block text-slate-300 font-medium py-1">Galeria</a>
+            <a href="#depoimentos" class="block text-slate-300 font-medium py-1">Avaliações</a>
+            <a href="#duvidas" class="block text-slate-300 font-medium py-1">FAQ</a>
+            <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="w-full mt-2 inline-flex items-center justify-center gap-2 bg-emerald-600 text-white px-4 py-3 rounded-xl font-bold">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                Agendar via WhatsApp (21) 98322-8129
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-[#0b0f17] via-[#111827] to-[#0b0f17]">
+        <!-- Ambient lighting -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-amber-500/10 blur-[130px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold tracking-wider uppercase">
+                        <i class="fa-solid fa-crown text-amber-400"></i>
+                        Barbearia Tradicional & Barber Club de Alto Padrão
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-serif text-white leading-tight">
+                        Muito mais que um corte. <br>
+                        Um ritual de <span class="gold-text-gradient">respeito e estilo</span>.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Em pleno coração de Ipanema, resgatamos o melhor da cutelaria tradicional em um ambiente sofisticado com chopp artesanal gelado, barboterapia com toalha quente e atendimento sem pressa.
+                    </p>
+
+                    <!-- Features Pills -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-300">
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-check text-amber-400"></i>
+                            <span>Barbeiros mestres premiados</span>
+                        </div>
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-check text-amber-400"></i>
+                            <span>Toalha quente com ozônio e óleos</span>
+                        </div>
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-check text-amber-400"></i>
+                            <span>Lounge com sinuca e chopp liberado</span>
+                        </div>
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-check text-amber-400"></i>
+                            <span>Pontualidade rigorosa de atendimento</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action -->
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Imperium%20Barber%20e%20gostaria%20de%20reservar%20uma%20cadeira." target="_blank" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 text-slate-950 px-8 py-4 rounded-xl font-extrabold text-base shadow-xl shadow-amber-500/20 hover:brightness-110 transition transform hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-2xl text-slate-950"></i>
+                            <span>Reservar Cadeira no WhatsApp</span>
+                        </a>
+                        <a href="#servicos" class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 px-6 py-4 rounded-xl font-bold text-base transition">
+                            <span>Ver Cardápio & Preços</span>
+                            <i class="fa-solid fa-arrow-down text-sm"></i>
+                        </a>
+                    </div>
+
+                    <!-- Micro Social Rating -->
+                    <div class="pt-4 flex items-center justify-center lg:justify-start gap-4 text-xs text-slate-400 border-t border-slate-800/80">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span><strong>Nota 4.9</strong> no Google (+1.400 cavalheiros atendidos)</span>
+                    </div>
+                </div>
+
+                <!-- Right Quick Booking Widget -->
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-900/90 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-amber-500/30 shadow-2xl relative">
+                        <div class="absolute -top-3 right-6 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black text-xs uppercase px-3 py-1 rounded-full shadow-lg">
+                            Agendamento VIP
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-1 font-serif">Escolha seu Estilo</h3>
+                        <p class="text-xs text-slate-400 mb-6">Monte seu agendamento em segundos para atendimento sem espera pelo WhatsApp.</p>
+
+                        <form id="barber-booking-form" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Seu Nome</label>
+                                <input type="text" id="barber-client-name" required placeholder="Como podemos te chamar?" class="w-full px-4 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none transition">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Serviço Principal</label>
+                                <select id="barber-service" class="w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none transition">
+                                    <option value="Corte Degradê / Clássico (R$ 75)">Corte Degradê Navalhado ou Tesoura Clássica (R$ 75)</option>
+                                    <option value="Barboterapia Imperial (R$ 65)">Barboterapia Imperial com Toalha Quente (R$ 65)</option>
+                                    <option value="Combo Cabelo + Barba + Chopp (R$ 120)">Combo Cabelo + Barba + Chopp Artesanal (R$ 120)</option>
+                                    <option value="Camuflagem de Grisalhos (R$ 60)">Camuflagem Natural de Fios Brancos (R$ 60)</option>
+                                    <option value="Tratamento Antiqueda / Detox (R$ 80)">Detox Capilar & Terapia Antiqueda (R$ 80)</option>
+                                    <option value="Dia do Noivo Experience">Dia do Noivo & Padrinhos (Personalizado)</option>
+                                    <option value="Plano de Assinatura Mensal">Quero entrar no Clube de Assinatura VIP</option>
+                                </select>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Dia Preferido</label>
+                                    <select id="barber-day" class="w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none transition">
+                                        <option value="Hoje">Hoje</option>
+                                        <option value="Amanhã">Amanhã</option>
+                                        <option value="Esta semana">Esta semana</option>
+                                        <option value="Final de semana">Sábado / Domingo</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Turno</label>
+                                    <select id="barber-shift" class="w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none transition">
+                                        <option value="Manhã (09h - 12h)">Manhã (09h - 12h)</option>
+                                        <option value="Tarde (13h - 18h)">Tarde (13h - 18h)</option>
+                                        <option value="Noite (18h - 21h)">Noite (18h - 21h)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Barbeiro de Preferência (Opcional)</label>
+                                <select id="barber-pro" class="w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm focus:border-amber-400 focus:outline-none transition">
+                                    <option value="Qualquer barbeiro disponível">Primeiro barbeiro disponível</option>
+                                    <option value="Mestre Giovanni (Visagista)">Giovanni (Especialista em Visagismo)</option>
+                                    <option value="Matheus (Cortes Clássicos)">Matheus (Cortes Clássicos & Tesoura)</option>
+                                    <option value="Lucas 'Blade' (Degradê & Fade)">Lucas "Blade" (Fade & Desenhos)</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Confirmar Horário no WhatsApp</span>
+                            </button>
+                            <p class="text-[11px] text-center text-slate-400">
+                                <i class="fa-solid fa-clock text-amber-400 mr-1"></i> Resposta quase imediata pelo WhatsApp: (21) 98322-8129
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Diferenciais -->
+    <section id="experiencia" class="py-20 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">O Ritual Imperium</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-white">Não é apenas cabelo, é a sua melhor versão</h2>
+                <p class="text-slate-400 text-sm">Criamos um ambiente onde cada detalhe foi meticulosamente desenhado para o conforto do cavalheiro moderno.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition duration-300 space-y-4">
+                    <div class="w-14 h-14 rounded-xl gold-gradient flex items-center justify-center text-black text-2xl">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-white">Barboterapia Tradicional</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Toalhas aquecidas em vaporizador de ozônio, hidratação profunda com óleos essenciais amadeirados, massagem facial relaxante e lâmina afiada sem irritação na pele.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition duration-300 space-y-4">
+                    <div class="w-14 h-14 rounded-xl gold-gradient flex items-center justify-center text-black text-2xl">
+                        <i class="fa-solid fa-whiskey-glass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-white">Open Bar & Lounge Exclusivo</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Chegue mais cedo e relaxe em nossas poltronas Chesterfield de couro legítimo, apreciando chopp artesanal carioca gelado, café espresso italiano ou drinks clássicos.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition duration-300 space-y-4">
+                    <div class="w-14 h-14 rounded-xl gold-gradient flex items-center justify-center text-black text-2xl">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-white">Visagismo Masculino Sob Medida</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Nossos barbeiros estudam o formato do seu rosto, linha mandibular e estilo pessoal para sugerir o corte e barba que maximizam sua presença e autoridade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Table -->
+    <section id="servicos" class="py-20 bg-[#0b0f17]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Tabela de Serviços</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-white">Cardápio de Serviços & Valores</h2>
+                <p class="text-slate-400 text-sm">Transparência, pontualidade e o mais alto padrão em cada procedimento.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <!-- Item 1 -->
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition flex items-center justify-between">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <h4 class="text-lg font-bold text-white font-serif">Corte Imperial (Fade ou Clássico)</h4>
+                            <span class="text-[10px] font-bold uppercase bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded">Popular</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">Lavagem especial, consultoria visagista, corte na tesoura ou máquina + finalização.</p>
+                        <span class="text-xs text-slate-500 block mt-1"><i class="fa-regular fa-clock"></i> 45 min</span>
+                    </div>
+                    <div class="text-right shrink-0 ml-4">
+                        <span class="text-2xl font-black text-amber-400">R$ 75</span>
+                        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20Corte%20Imperial%20%28R%24%2075%29." target="_blank" class="block text-xs font-bold text-emerald-400 hover:underline mt-1">
+                            <i class="fa-brands fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition flex items-center justify-between">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <h4 class="text-lg font-bold text-white font-serif">Barboterapia com Toalha Quente</h4>
+                            <span class="text-[10px] font-bold uppercase bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded">Destaque</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">Esfoliação facial, vapor de ozônio, toalha aromática aquecida, navalha e bálsamo.</p>
+                        <span class="text-xs text-slate-500 block mt-1"><i class="fa-regular fa-clock"></i> 40 min</span>
+                    </div>
+                    <div class="text-right shrink-0 ml-4">
+                        <span class="text-2xl font-black text-amber-400">R$ 65</span>
+                        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20Barboterapia%20Imperial%20%28R%24%2065%29." target="_blank" class="block text-xs font-bold text-emerald-400 hover:underline mt-1">
+                            <i class="fa-brands fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-amber-500/50 relative overflow-hidden flex items-center justify-between">
+                    <div class="absolute top-0 right-0 bg-amber-500 text-black text-[9px] font-black uppercase px-3 py-0.5 rounded-bl">Melhor Custo</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white font-serif">Combo VIP: Cabelo + Barba</h4>
+                        <p class="text-xs text-slate-400 mt-1">O pacote completo com desconto especial + chopp artesanal cortesia.</p>
+                        <span class="text-xs text-slate-500 block mt-1"><i class="fa-regular fa-clock"></i> 75 min</span>
+                    </div>
+                    <div class="text-right shrink-0 ml-4">
+                        <span class="text-2xl font-black text-amber-400">R$ 120</span>
+                        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%2C%20quero%20agendar%20o%20Combo%20VIP%20Cabelo%20%2B%20Barba%20%28R%24%20120%29." target="_blank" class="block text-xs font-bold text-emerald-400 hover:underline mt-1">
+                            <i class="fa-brands fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition flex items-center justify-between">
+                    <div>
+                        <h4 class="text-lg font-bold text-white font-serif">Camuflagem de Grisalhos</h4>
+                        <p class="text-xs text-slate-400 mt-1">Pigmentação sutil e natural que rejuvenesce sem deixar aspecto tingido artificial.</p>
+                        <span class="text-xs text-slate-500 block mt-1"><i class="fa-regular fa-clock"></i> 30 min</span>
+                    </div>
+                    <div class="text-right shrink-0 ml-4">
+                        <span class="text-2xl font-black text-amber-400">R$ 60</span>
+                        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20a%20Camuflagem%20de%20Grisalhos." target="_blank" class="block text-xs font-bold text-emerald-400 hover:underline mt-1">
+                            <i class="fa-brands fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition flex items-center justify-between">
+                    <div>
+                        <h4 class="text-lg font-bold text-white font-serif">Tratamento Capilar & Detox</h4>
+                        <p class="text-xs text-slate-400 mt-1">Desobstrução do bulbo capilar, controle de oleosidade e fortalecimento antiqueda.</p>
+                        <span class="text-xs text-slate-500 block mt-1"><i class="fa-regular fa-clock"></i> 40 min</span>
+                    </div>
+                    <div class="text-right shrink-0 ml-4">
+                        <span class="text-2xl font-black text-amber-400">R$ 80</span>
+                        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%2C%20quero%20agendar%20um%20Tratamento%20Capilar%20Detox." target="_blank" class="block text-xs font-bold text-emerald-400 hover:underline mt-1">
+                            <i class="fa-brands fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition flex items-center justify-between">
+                    <div>
+                        <h4 class="text-lg font-bold text-white font-serif">Dia do Noivo & Padrinhos</h4>
+                        <p class="text-xs text-slate-400 mt-1">Espaço reservado exclusivo, cortes, barba, massagem, charutos e brinde especial.</p>
+                        <span class="text-xs text-slate-500 block mt-1"><i class="fa-solid fa-users"></i> Experiência Exclusiva</span>
+                    </div>
+                    <div class="text-right shrink-0 ml-4">
+                        <span class="text-sm font-bold text-amber-400">Sob Consulta</span>
+                        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20pacote%20Dia%20do%20Noivo." target="_blank" class="block text-xs font-bold text-emerald-400 hover:underline mt-1">
+                            <i class="fa-brands fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Club Section -->
+    <section id="assinatura" class="py-20 bg-gradient-to-b from-[#0b0f17] via-slate-950 to-[#0b0f17] border-y border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Exclusividade Contínua</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-white">Clube de Assinatura Imperium VIP</h2>
+                <p class="text-slate-400 text-sm">Esteja sempre com visual impecável toda semana pagando um valor fixo mensal sem surpresas.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+                <!-- Silver Plan -->
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold font-serif text-white">Plano Silver</h3>
+                        <p class="text-xs text-slate-400 mt-1">Ideal para quem mantém o corte sempre em dia.</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-black text-white">R$ 139</span>
+                            <span class="text-slate-400 text-xs">/mês</span>
+                        </div>
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Cortes de cabelo ilimitados no mês</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Lavagem especial inclusa</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> 1 Chopp cortesia por visita</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> 10% OFF em cosméticos e pomadas</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Gostaria%20de%20assinar%20o%20Plano%20Silver%20da%20Imperium." target="_blank" class="mt-8 block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl transition">
+                        Assinar Plano Silver
+                    </a>
+                </div>
+
+                <!-- Black Plan (Featured) -->
+                <div class="bg-slate-900 p-8 rounded-3xl border-2 border-amber-500 shadow-2xl shadow-amber-500/10 relative flex flex-col justify-between transform md:-translate-y-2">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-black font-black text-xs uppercase px-4 py-1 rounded-full">
+                        Mais Escolhido
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold font-serif gold-text-gradient">Plano Black VIP</h3>
+                        <p class="text-xs text-slate-400 mt-1">Cabelo e barba perfeitos a semana inteira.</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-black gold-text-gradient">R$ 219</span>
+                            <span class="text-slate-400 text-xs">/mês</span>
+                        </div>
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Cortes ilimitados durante o mês</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Barboterapia ilimitada com toalha quente</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Open Chopp e Café Espresso à vontade</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> 20% OFF em produtos da loja</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Agendamento prioritário via WhatsApp</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Quero%20fazer%20minha%20ades%C3%A3o%20ao%20Plano%20Black%20VIP." target="_blank" class="mt-8 block text-center gold-gradient text-black font-extrabold py-3.5 rounded-xl shadow-lg transition hover:brightness-110">
+                        Assinar Plano Black VIP
+                    </a>
+                </div>
+
+                <!-- Gold Executive Plan -->
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold font-serif text-white">Plano Beard Pro</h3>
+                        <p class="text-xs text-slate-400 mt-1">Focado no alinhamento e desenho da barba.</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-black text-white">R$ 149</span>
+                            <span class="text-slate-400 text-xs">/mês</span>
+                        </div>
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Barboterapia e alinhamento ilimitados</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Óleo essencial e hidratação de barba</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Chopp artesanal liberado</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> 10% OFF em óleos e balms de barba</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Gostaria%20de%20assinar%20o%20Plano%20Beard%20Pro." target="_blank" class="mt-8 block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl transition">
+                        Assinar Plano Beard Pro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Grid -->
+    <section id="galeria" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Nosso Portfólio</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-white">Estilo & Sofisticação em Cada Detalhe</h2>
+                <p class="text-slate-400 text-sm">Confira alguns dos trabalhos realizados pela nossa equipe de barbeiros.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-2xl border border-slate-800 group">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Corte masculino degradê" class="h-72 w-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl border border-slate-800 group">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80" alt="Barboterapia e navalha" class="h-72 w-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl border border-slate-800 group">
+                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=600&q=80" alt="Homem com corte clássico" class="h-72 w-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl border border-slate-800 group">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80" alt="Ambiente de barbearia luxo" class="h-72 w-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Depoimentos -->
+    <section id="depoimentos" class="py-20 bg-[#0b0f17]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Avaliações Google</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-white">A Palavra de Quem Frequenta</h2>
+                <p class="text-slate-400 text-sm">Mais de 1.400 clientes assíduos recomendam o padrão Imperium.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed">
+                        "Frequento a Imperium há mais de 2 anos. O atendimento do Giovanni é impecável, o chopp sempre trincando de gelado e a pontualidade é britânica. Sou assinante do plano Black e não troco por nada!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-2 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center text-black font-bold">BV</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Bruno Vasconcellos</p>
+                            <p class="text-xs text-slate-500">Empresário • Ipanema</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed">
+                        "Fiz meu Dia do Noivo com meus 6 padrinhos na Imperium. Alugaram o andar superior pra gente, com sinuca, chopp e charutos. O corte e a barboterapia foram perfeitos para as fotos do casamento!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-2 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center text-black font-bold">LF</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Lucas Fagundes</p>
+                            <p class="text-xs text-slate-500">Advogado • Leblon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed">
+                        "Minha barba sempre encravava com navalha comum. A barboterapia com vapor de ozônio e óleos essenciais daqui curou minha foliculite. O agendamento por WhatsApp é muito rápido e prático."
+                    </p>
+                    <div class="flex items-center gap-3 pt-2 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center text-black font-bold">GS</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Guilherme Siqueira</p>
+                            <p class="text-xs text-slate-500">Arquiteto • Lagoa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="duvidas" class="py-20 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 space-y-3">
+                <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Dúvidas Frequentes</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-white">Tudo o Que Você Precisa Saber</h2>
+                <p class="text-slate-400 text-sm">Ficou alguma questão? Respondemos aqui de forma direta.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="border border-slate-800 rounded-2xl overflow-hidden bg-slate-900">
+                    <button class="w-full text-left px-6 py-4 font-bold text-white flex justify-between items-center hover:bg-slate-800/80 focus:outline-none faq-btn">
+                        <span>Preciso agendar com antecedência ou posso chegar sem hora marcada?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-slate-400 text-sm leading-relaxed hidden faq-box">
+                        Atendemos com e sem hora marcada. Porém, para evitar filas e garantir que você seja atendido no minuto exato pelo barbeiro de sua escolha, recomendamos sempre confirmar seu horário no WhatsApp <strong>(21) 98322-8129</strong>.
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 rounded-2xl overflow-hidden bg-slate-900">
+                    <button class="w-full text-left px-6 py-4 font-bold text-white flex justify-between items-center hover:bg-slate-800/80 focus:outline-none faq-btn">
+                        <span>Como funciona o Clube de Assinatura mensal?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-slate-400 text-sm leading-relaxed hidden faq-box">
+                        A assinatura é cobrada mensalmente de forma automática no cartão de crédito (sem comprometer o seu limite total, estilo mensalidade da Netflix ou Gympass). Você tem direito a frequentar a barbearia sem limite de visitas durante o mês, com prioridade de agenda e chopp liberado.
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 rounded-2xl overflow-hidden bg-slate-900">
+                    <button class="w-full text-left px-6 py-4 font-bold text-white flex justify-between items-center hover:bg-slate-800/80 focus:outline-none faq-btn">
+                        <span>O que está incluso na cortesia de bebidas?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-slate-400 text-sm leading-relaxed hidden faq-box">
+                        Todos os clientes têm direito a chopp artesanal carioca gelado, café espresso italiano Moak, água mineral e refrigerante durante a sua permanência em nosso lounge.
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 rounded-2xl overflow-hidden bg-slate-900">
+                    <button class="w-full text-left px-6 py-4 font-bold text-white flex justify-between items-center hover:bg-slate-800/80 focus:outline-none faq-btn">
+                        <span>Há estacionamento ou manobrista no local?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-400 transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-slate-400 text-sm leading-relaxed hidden faq-box">
+                        Sim! Contamos com convênio e serviço de valet com estacionamento seguro na mesma quadra da Rua Visconde de Pirajá, com 1ª hora abonada para clientes com serviços acima de R$ 100.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Golden Banner WhatsApp CTA -->
+    <section class="py-16 bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+            <span class="inline-block bg-black/10 px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">Atendimento Imediato</span>
+            <h2 class="text-3xl sm:text-5xl font-black font-serif tracking-tight">Pronto para elevar o seu estilo?</h2>
+            <p class="text-slate-900 font-medium text-base sm:text-lg max-w-xl mx-auto">
+                Garanta seu horário com os mestres da cutelaria do Rio de Janeiro. Uma mensagem rápida no WhatsApp é tudo o que você precisa.
+            </p>
+            <div class="pt-2">
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Imperium%20Barber%20Club." target="_blank" class="inline-flex items-center gap-3 bg-slate-950 text-white hover:bg-black px-9 py-4 rounded-2xl font-black text-lg shadow-2xl transition hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+                    <span>Agendar no WhatsApp: (21) 98322-8129</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Location -->
+    <footer class="py-16 bg-slate-950 border-t border-slate-900 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center text-black font-black text-lg">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <span class="text-xl font-black font-serif gold-text-gradient tracking-wider">IMPERIUM BARBER CLUB</span>
+                    </div>
+
+                    <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+                        Barbearia conceito e clube por assinatura. Elevando o padrão de cuidados masculinos no Rio de Janeiro com técnicas tradicionais e conforto contemporâneo.
+                    </p>
+
+                    <div class="space-y-3 text-xs">
+                        <p class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-amber-400"></i>
+                            <span>Rua Visconde de Pirajá, 550 - Ipanema, Rio de Janeiro - RJ</span>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <span>WhatsApp: <a href="https://wa.me/5521983228129" class="text-emerald-400 font-bold hover:underline">(21) 98322-8129</a></span>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-amber-400"></i>
+                            <span>Terça a Sábado: 09h às 21h | Domingo: 10h às 16h</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-slate-900 rounded-3xl p-6 border border-slate-800 flex flex-col justify-between">
+                    <div class="h-44 rounded-xl bg-cover bg-center relative overflow-hidden flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80'); filter: brightness(0.7);">
+                        <div class="bg-black/60 backdrop-blur-sm p-4 rounded-xl text-center border border-amber-500/30">
+                            <i class="fa-solid fa-location-crosshairs text-amber-400 text-xl mb-1"></i>
+                            <h4 class="text-white font-bold font-serif text-sm">Imperium Barber Club - Unidade Ipanema</h4>
+                            <p class="text-amber-300 text-xs mt-0.5">A 150m da Praça Nossa Senhora da Paz</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+                        <span class="text-xs text-slate-400">Estacionamento conveniado e acesso direto pelo Metrô Ipanema.</span>
+                        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%2C%20quero%20o%20link%20de%20localiza%C3%A7%C3%A3o%20pelo%20WhatsApp." target="_blank" class="shrink-0 inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-amber-400 px-4 py-2 rounded-xl text-xs font-bold border border-amber-500/30 transition">
+                            <i class="fa-solid fa-map-pin"></i> Como Chegar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="mt-12 pt-6 border-t border-slate-900 text-center text-xs text-slate-600 flex flex-col sm:flex-row justify-between items-center gap-3">
+                <p>&copy; 2026 Imperium Barber Club Ltda. Todos os direitos reservados.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-slate-400">Termos</a>
+                    <span>•</span>
+                    <a href="#" class="hover:text-slate-400">Privacidade</a>
+                    <span>•</span>
+                    <a href="https://wa.me/5521983228129" class="text-emerald-400 hover:underline">WhatsApp Oficial (21) 98322-8129</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Bubble Button -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Imperium%20Barber%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="hidden md:flex items-center bg-slate-900 border border-amber-500/30 text-white px-4 py-2.5 rounded-2xl shadow-2xl text-xs font-bold hover:border-amber-400 transition transform hover:-translate-x-1">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 mr-2 animate-pulse"></span>
+            WhatsApp VIP: (21) 98322-8129
+        </a>
+
+        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Imperium%20Barber%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" aria-label="WhatsApp da Barbearia" class="w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-2xl pulse-whatsapp hover:scale-110 active:scale-95 transition-all">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile navigation toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        if (menuToggle && mobileNav) {
+            menuToggle.addEventListener('click', () => {
+                mobileNav.classList.toggle('hidden');
+            });
+        }
+
+        // FAQ accordion
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const box = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isHidden = box.classList.contains('hidden');
+
+                document.querySelectorAll('.faq-box').forEach(b => b.classList.add('hidden'));
+                document.querySelectorAll('.faq-btn i').forEach(i => i.classList.remove('rotate-180'));
+
+                if (isHidden) {
+                    box.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+
+        // Booking Form WhatsApp Redirect
+        const bookingForm = document.getElementById('barber-booking-form');
+        if (bookingForm) {
+            bookingForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('barber-client-name').value.trim();
+                const service = document.getElementById('barber-service').value;
+                const day = document.getElementById('barber-day').value;
+                const shift = document.getElementById('barber-shift').value;
+                const pro = document.getElementById('barber-pro').value;
+
+                let msg = `Olá! Meu nome é *${name}* e gostaria de agendar um horário na Imperium Barber Club.\n`;
+                msg += `✂️ *Serviço:* ${service}\n`;
+                msg += `📅 *Dia preferido:* ${day}\n`;
+                msg += `⏰ *Turno:* ${shift}\n`;
+                msg += `💈 *Barbeiro:* ${pro}\n`;
+                msg += `\nPoderia confirmar a disponibilidade de horário? Obrigado!`;
+
+                const phone = '5521983228129';
+                const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+                window.open(url, '_blank');
+            });
+        }
+    </script>
+</body>
+</html>
